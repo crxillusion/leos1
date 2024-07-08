@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Montserrat arm';
-    src: url('/static/fonts/Montserratarm-Light.woff2') format('woff2'),
-    url('/static/fonts/Montserratarm-Light.woff') format('woff');
+    src: url('https://crxillusion.github.io/leos1/static/fonts/Montserratarm-Light.woff2') format('woff2'),
+    url('https://crxillusion.github.io/leos1/static/fonts/Montserratarm-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Montserrat arm';
-    src: url('/static/fonts/Montserratarm-Regular.woff2') format('woff2'),
-    url('/static/fonts/Montserratarm-Regular.woff') format('woff');
+    src: url('https://crxillusion.github.io/leos1/static/fonts/Montserratarm-Regular.woff2') format('woff2'),
+    url('https://crxillusion.github.io/leos1/static/fonts/Montserratarm-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Montserrat arm';
-    src: url('/static/fonts/Montserratarm-Bold.woff2') format('woff2'),
-    url('/static/fonts/Montserratarm-Bold.woff') format('woff');
+    src: url('https://crxillusion.github.io/leos1/static/fonts/Montserratarm-Bold.woff2') format('woff2'),
+    url('https://crxillusion.github.io/leos1/static/fonts/Montserratarm-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -30,7 +30,7 @@
 }
 
 #inviteRoot .fabric_user_card {
-    background-image: url("/static/img/lion-bg.avif") !important;
+    background-image: url("https://crxillusion.github.io/leos1/static/img/lion-bg.avif") !important;
     background-size: contain !important;
     background-color: white !important;
 }
@@ -50,12 +50,6 @@
 
 #footer * {
     font-family: 'Montserrat arm', "Lato", Arial, sans-serif !important;
-}
-
-#footer .top-block {
-    background: url("/static/img/leo.jpg") no-repeat right bottom;
-    padding-bottom: 15rem;
-    background-size: contain;
 }
 
 #footer .info-block {
