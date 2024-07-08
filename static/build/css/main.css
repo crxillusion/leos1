@@ -1,3 +1,7 @@
 #inviteRoot .view-invitation__tabs{
     display: none !important;
 }
+
+#inviteRoot .fabric_user_card{
+    background-image: url("/static/img/lion-bg.avif");
+}
