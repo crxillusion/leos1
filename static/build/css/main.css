@@ -7,3 +7,7 @@
     background-size: contain !important;
     background-color: white !important;
 }
+
+#inviteRoot .view-invitation__sticky-wrapper{
+    display: none!important;
+}
