@@ -4,4 +4,6 @@
 
 #inviteRoot .fabric_user_card{
     background-image: url("/static/img/lion-bg.avif") !important;
+    background-size: contain !important;
+    background-color: white !important;
 }
