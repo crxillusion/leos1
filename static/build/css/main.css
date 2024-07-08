@@ -1,13 +1,80 @@
-#inviteRoot .view-invitation__tabs{
+@font-face {
+    font-family: 'Montserrat arm';
+    src: url('/static/fonts/Montserratarm-Light.woff2') format('woff2'),
+    url('/static/fonts/Montserratarm-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat arm';
+    src: url('/static/fonts/Montserratarm-Regular.woff2') format('woff2'),
+    url('/static/fonts/Montserratarm-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat arm';
+    src: url('/static/fonts/Montserratarm-Bold.woff2') format('woff2'),
+    url('/static/fonts/Montserratarm-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+#inviteRoot .view-invitation__tabs {
     display: none !important;
 }
 
-#inviteRoot .fabric_user_card{
-    background-image: url("https://crxillusion.github.io/leos1/static/img/lion-bg.avif") !important;
+#inviteRoot .fabric_user_card {
+    background-image: url("/static/img/lion-bg.avif") !important;
     background-size: contain !important;
     background-color: white !important;
 }
 
-#inviteRoot .view-invitation__sticky-wrapper{
-    display: none!important;
+#inviteRoot .view-invitation__sticky-wrapper {
+    display: none !important;
+}
+
+#footer {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#footer .top-block p {
+    text-align: center;
+}
+
+#footer * {
+    font-family: 'Montserrat arm', "Lato", Arial, sans-serif !important;
+}
+
+#footer .top-block {
+    background: url("/static/img/leo.jpg") no-repeat right bottom;
+    padding-bottom: 15rem;
+    background-size: contain;
+}
+
+#footer .info-block {
+    padding: 1rem 0;
+}
+
+img.calendar {
+    width: 100%;
+    background-color: #a68467;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #a68467
+}
+
+.timeline-block {
+    padding-top: 60px;
 }
