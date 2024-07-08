@@ -42,6 +42,7 @@
 #footer {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 2rem !important;
 }
 
 #footer .top-block p {
@@ -71,4 +72,17 @@ a {
 
 .timeline-block {
     padding-top: 60px;
+}
+
+.form {
+    padding: 0 20px;
+}
+
+.button.primary{
+    background-color: #a68467;
+    border-color: #a68467;
+}
+
+.footer-block {
+    margin-top: 60px;
 }
