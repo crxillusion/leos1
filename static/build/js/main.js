@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const newInput = document.createElement('input');
                 newInput.type = 'text';
-                newInput.placeholder = 'Անուն';
+                newInput.placeholder = `Անուն Ազգանուն (հյուր ${i+2})`;
                 newInput.className = 'input-text';
 
                 inputBox.appendChild(newInput);
