@@ -78,11 +78,50 @@ a {
     padding: 0 20px;
 }
 
-.button.primary{
+.button.primary {
     background-color: #a68467;
     border-color: #a68467;
 }
 
 .footer-block {
     margin-top: 60px;
+}
+
+.guests-input-wrapper {
+    display: flex;
+    align-items: center !important;
+    position: relative;
+    /* width: fit-content; */
+}
+
+.guests-input-wrapper button {
+    padding: 5px 20px;
+    font-size: 20px;
+    border: 1px #b9bcbf solid;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+
+#minusButton {
+    left: 0;
+}
+
+#plusButton {
+    right: 0;
+}
+
+.guests-input-wrapper .input-text {
+    font-size: 16px;
+    padding: 5px 30px; /* Adjust padding to make room for buttons */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#dynamicInputs .input-wrapper {
+    margin: 10px 0;
 }

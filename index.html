@@ -308,14 +308,19 @@
                     </div>
                     <div class="input-wrapper">
                         <div class="input-box">
-                            <input type="text" placeholder="Անուն(ներ)" class="input-text">
+                            <input type="text" placeholder="Անուն" class="input-text">
                         </div>
                     </div>
-                    <div class="input-wrapper">
-
+                    <span style="text-align: left; font-size: 14px">Հյուրերի քանակ</span>
+                    <div class="input-wrapper guests-input-wrapper">
                         <div class="input-box">
-                            <input type="text" placeholder="Հյուրերի թիվ" class="input-text">
+                            <input type="number" id="mainInput" value="1" min="1" class="input-text">
                         </div>
+                        <button type="button" id="minusButton">-</button>
+                        <button type="button" id="plusButton">+</button>
+                    </div>
+                    <div class="dynamic-inputs" id="dynamicInputs">
+                        <!-- Dynamic inputs will be created here -->
                     </div>
                     <button class="button primary large" type="submit">Ուղարկել</button>
                 </form>
@@ -423,6 +428,6 @@
       rel="stylesheet"/>
 <script type="text/javascript"
         src="https://g0.evitecdn.com/static/_build/webpack_bundles/view_invitation.index.view-invitation-d884d12.js"></script>
-
+<script type="text/javascript" src='static/build/js/main.js'></script>
 </body>
 </html>
