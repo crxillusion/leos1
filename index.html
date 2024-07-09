@@ -289,32 +289,30 @@
             <div class="timeline-block">
                 <img src="static/img/leo1.jpg" alt="">
                 <p style="font-size: 2em;">Ի՞նչ է սպասվում</p>
+                <p style="font-size: 14px">(օրակարգը դեռ մշակվում է)</p>
                 <img src="static/img/timeline.png" alt="">
             </div>
             <div class="form">
                 <p style="font-weight: bold; font-size: 1.5em">
-                    Խնդրում ենք հաստատել Ձեր ներկայությունը միջոցառմանը
+                    Խնդրում ենք հաստատել Ձեր ներկայությունը միջոցառմանը մինչև հուլիսի 20-ը
                 </p>
-                <p>
-                    Կսպասենք պատասխանի մինչև 20.07.2024
-                </p>
-                <form style="padding: 0 30px;flex-direction: column;gap: 1rem;display: flex;">
+                <form style="padding: 0 30px;flex-direction: column;gap: 1rem;display: flex;" class="coming-form">
                     <div style="text-align: left; margin-bottom: 10px">
-                        <label><input type="radio" name="coming" value="true" style="margin-right: 10px">Կգամ</label>
+                        <label><input type="radio" name="coming" value="true" style="margin-right: 10px">Կգանք</label>
                     </div>
                     <div style="text-align: left">
-                        <label><input type="radio" name="coming" value="false" style="margin-right: 10px">Չեմ կարողանա
+                        <label><input type="radio" name="coming" value="false" style="margin-right: 10px">Չենք կարողանա
                             գալ</label>
                     </div>
                     <div class="input-wrapper">
                         <div class="input-box">
-                            <input type="text" placeholder="Անուն Ազգանուն" class="input-text">
+                            <input type="text" placeholder="Անուն Ազգանուն" class="input-text" name="guest[0]">
                         </div>
                     </div>
                     <span style="text-align: left; font-size: 14px">Հյուրերի քանակ</span>
                     <div class="input-wrapper guests-input-wrapper">
                         <div class="input-box">
-                            <input type="number" id="mainInput" value="1" min="1" class="input-text">
+                            <input type="number" id="mainInput" name="guests_number" value="1" min="1" class="input-text">
                         </div>
                         <button type="button" id="minusButton">-</button>
                         <button type="button" id="plusButton">+</button>
@@ -322,7 +320,7 @@
                     <div class="dynamic-inputs" id="dynamicInputs">
                         <!-- Dynamic inputs will be created here -->
                     </div>
-                    <button class="button primary large" type="submit">Ուղարկել</button>
+                    <button id="submitBtn" class="button primary large" type="button">Ուղարկել</button>
                 </form>
             </div>
             <div class="footer-block">
@@ -334,7 +332,18 @@
         </div>
     </div>
 
-    <div id="feedback"></div>
+    <div class="success-block">
+        <div class="message-coming">
+            <p>Շնորհակալ ենք</p>
+            <p>Սիրով սպասում ենք Ձեզ</p>
+            <img src="static/img/heart.png" alt="">
+        </div>
+        <div class="message-not-coming">
+            <p>Ափսոս</p>
+            <p>Մենք Ձեզ սպասում էինք</p>
+            <img src="static/img/heart.png" alt="">
+        </div>
+    </div>
 
 
 </div>

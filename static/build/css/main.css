@@ -125,3 +125,35 @@ a {
 #dynamicInputs .input-wrapper {
     margin: 10px 0;
 }
+
+.success-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a68467;
+    display: none;
+    visibility: hidden;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-coming, .message-not-coming {
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.success-block.visible, .message-coming.visible, .message-not-coming.visible {
+    display: flex;
+    visibility: visible;
+}
+
+.message-coming img, .message-not-coming img {
+    width: 80px;
+    margin-top: 20px;
+}
