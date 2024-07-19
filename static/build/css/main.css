@@ -157,3 +157,7 @@ a {
     width: 80px;
     margin-top: 20px;
 }
+
+.input-text.input-required-error{
+    border: 1px solid red;
+}

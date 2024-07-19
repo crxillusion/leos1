@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dynamicInputs = document.getElementById('dynamicInputs');
     const submitButton = document.getElementById('submitBtn');
     const successBlock = document.querySelector('.success-block');
+    const mainGuest = document.querySelector('[name="guest[0]"]');
 
     function updateDynamicInputs() {
         const value = parseInt(mainInput.value);
@@ -51,9 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     submitButton.addEventListener('click', () => {
+        mainGuest.classList.remove('input-required-error');
         const form = document.querySelector('.coming-form');
         const params = new FormData(form);
-
+        console.log(...params);
+        if (!params.get('guest[0]')) {
+            mainGuest.classList.add('input-required-error');
+            return;
+        }
         var botToken = '7451052263:AAH5d0ujgXz-6mKvZWTf7hg-U7LX1sP0JiQ';
         var chatId = '-4236962620';
         var guest_num = params.get('guests_number');
